@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="178" id="8zH-HJ-jBD" customClass="FilterCell" customModule="testF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="178"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8zH-HJ-jBD" id="90i-Pt-gMe">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="178"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLX-dl-bAY" customClass="RangeSeekSlider" customModule="RangeSeekSlider">
+                        <rect key="frame" x="20" y="11" width="374" height="147"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdF-KC-T2D">
+                                <rect key="frame" x="343" y="0.0" width="31" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="A4Y-EC-xJk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrf-Za-cpA">
+                                <rect key="frame" x="0.0" y="0.0" width="31" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="N52-2p-Ipy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wrf-Za-cpA" firstAttribute="top" secondItem="hLX-dl-bAY" secondAttribute="top" id="8Wc-Wo-jeA"/>
+                            <constraint firstAttribute="trailing" secondItem="bdF-KC-T2D" secondAttribute="trailing" id="Gsf-kD-4Cq"/>
+                            <constraint firstItem="bdF-KC-T2D" firstAttribute="top" secondItem="hLX-dl-bAY" secondAttribute="top" id="L7A-Me-mXy"/>
+                            <constraint firstItem="wrf-Za-cpA" firstAttribute="leading" secondItem="hLX-dl-bAY" secondAttribute="leading" id="ftn-79-dpb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="hideLabels" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="labelsFixed" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableStep" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="labelPadding">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="selectedHandleDiameterMultiplier">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="minDistance">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maxDistance">
+                                <real key="value" value="29"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="step">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="handleColor">
+                                <color key="value" red="0.82444138601036265" green="0.82444138601036265" blue="0.82444138601036265" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="sliderAction:" destination="8zH-HJ-jBD" eventType="valueChanged" id="dkl-ED-4G0"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hLX-dl-bAY" firstAttribute="leading" secondItem="90i-Pt-gMe" secondAttribute="leading" constant="20" symbolic="YES" id="857-8J-ZzV"/>
+                    <constraint firstAttribute="trailing" secondItem="hLX-dl-bAY" secondAttribute="trailing" constant="20" symbolic="YES" id="DO4-Qm-XJe"/>
+                    <constraint firstAttribute="bottom" secondItem="hLX-dl-bAY" secondAttribute="bottom" constant="20" symbolic="YES" id="HFO-Gl-ga2"/>
+                    <constraint firstItem="hLX-dl-bAY" firstAttribute="top" secondItem="90i-Pt-gMe" secondAttribute="topMargin" id="XP1-pX-Vx7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="maxValue" destination="bdF-KC-T2D" id="gXR-CA-uIN"/>
+                <outlet property="minValue" destination="wrf-Za-cpA" id="0eA-Ob-HlC"/>
+                <outlet property="rangeSlider" destination="hLX-dl-bAY" id="h0u-TR-ZUV"/>
+            </connections>
+            <point key="canvasLocation" x="244.92753623188409" y="22.767857142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  testF
+
+  Created by Максим Шаптала on 20.01.2020.
+  Copyright © 2020 Максим Шаптала. All rights reserved.
+*/
+
+"Button.Discard" = "Discard";
+"Button.Accept" = "Accept";
+"Button.Update" = "Update";
+"Button.Back" = "Back";
+
+"Label.Filters" = "Filters";
+"Label.Author" = "Max Shaptala";
+"Label.Range" = "Range";
+"Label.BiggerThen" = "Bigger then";
+"Label.Nights" = "nights";
+"Label.Night" = "night";
